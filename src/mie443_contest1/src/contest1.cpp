@@ -30,6 +30,7 @@ int main(int argc, char **argv)
 	ros::Publisher vel_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel_mux/input/teleop", 1);
 
 	double angular = 0.0;
+	double acceleration = 0.0;
 	double linear = 0.0;
 	geometry_msgs::Twist vel;
 
